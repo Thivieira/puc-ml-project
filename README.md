@@ -24,11 +24,10 @@ ml-project/
 │   │   ├── improved_spam_model.joblib # Modelo melhorado
 │   │   ├── robust_spam_model.joblib   # Modelo robusto
 │   │   ├── SMSSpamCollection          # Dataset original
-│   │   ├── mvp_sms_spam.py                    # Script de treinamento inicial
-│   │   ├── mvp_sms_spam.ipynb                 # Notebook original (Colab)
-│   │   ├── improved_spam_model_analysis.ipynb # Notebook do modelo melhorado
-│   │   ├── robust_spam_model_analysis.ipynb   # Notebook do modelo robusto
-│   │   └── model_evolution_analysis.ipynb     # Análise comparativa dos modelos
+│   │   └── notebooks/                 # Notebooks Jupyter
+│   │       ├── mvp_sms_spam.ipynb                 # Notebook original (Colab)
+│   │       ├── improved_spam_model.ipynb          # Notebook do modelo melhorado
+│   │       └── robust_spam_model.ipynb            # Notebook do modelo robusto
 │   ├── models/            # Módulos do modelo
 │   │   ├── __init__.py
 │   │   └── spam_classifier.py         # Classificador principal
@@ -137,6 +136,30 @@ cd front
 npm run build
 ```
 
+## 📸 Screenshots da Aplicação
+
+### Interface da Aplicação
+
+A aplicação possui uma interface moderna e intuitiva para classificação de mensagens SMS:
+
+#### 📱 Classificação de Mensagem Spam
+
+![Classificação Spam](spam_screenshot.png)
+_Exemplo de detecção de spam com alta confiança (95%)_
+
+#### ✅ Classificação de Mensagem Ham (Não Spam)
+
+![Classificação Ham](ham_screenshot.png)
+_Exemplo de mensagem legítima com baixa probabilidade de spam_
+
+### Características da Interface
+
+- **🎨 Design Moderno**: Interface limpa com gradientes e sombras
+- **🚦 Indicadores Visuais**: Cores semânticas (verde para ham, vermelho para spam)
+- **📊 Barra de Confiança**: Visualização da probabilidade de spam
+- **📱 Responsivo**: Funciona em desktop e mobile
+- **⚡ Tempo Real**: Classificação instantânea ao enviar
+
 ## 🧪 Testes
 
 ### Testes Automatizados
@@ -199,32 +222,26 @@ def test_model_performance():
 
 O projeto inclui notebooks Jupyter complementares que documentam todo o processo de desenvolvimento:
 
-1. **`mvp_sms_spam.ipynb`** - Notebook original (Google Colab)
+1. **`notebooks/mvp_sms_spam.ipynb`** - Notebook original (Google Colab)
 
    - Implementação inicial com algoritmos clássicos
    - Pipeline básico de ML
    - Comparação de modelos (KNN, Árvore, Naive Bayes, SVM)
 
-2. **`improved_spam_model_analysis.ipynb`** - Modelo Melhorado
+2. **`notebooks/improved_spam_model.ipynb`** - Modelo Melhorado
 
    - Pré-processamento robusto
    - Otimização avançada de hiperparâmetros
    - TF-IDF com n-gramas (1-3)
    - Múltiplos classificadores
 
-3. **`robust_spam_model_analysis.ipynb`** - Modelo Robusto
+3. **`notebooks/robust_spam_model.ipynb`** - Modelo Robusto
 
    - 50+ features específicas para spam
    - Pipeline híbrido (TF-IDF + features customizadas)
    - Extrator de features personalizado
    - Padrões regex avançados
    - Score composto de spam
-
-4. **`model_evolution_analysis.ipynb`** - Análise Comparativa
-   - Comparação entre todos os modelos
-   - Visualizações de métricas
-   - Análise de evolução
-   - Testes com casos específicos
 
 ### 🔄 Evolução dos Modelos
 
@@ -529,7 +546,7 @@ O projeto inclui um **notebook completo no Google Colab** que atende a todos os 
 
 ### Acesso ao Notebook
 
-O notebook está disponível em: `api/ML/mvp_sms_spam.ipynb`
+O notebook está disponível em: `api/ML/notebooks/mvp_sms_spam.ipynb`
 
 **Para execução no Colab:**
 

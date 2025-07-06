@@ -47,30 +47,10 @@ ml-project/
 │   ├── dist/              # Build de produção
 │   ├── package.json       # Dependências Node.js
 │   └── vite.config.ts     # Configuração Vite
-├── start_project.sh       # Script principal de inicialização
-├── ml-project.code-workspace # Configuração VS Code
 └── README.md              # Este arquivo
 ```
 
 ## 🚀 Como Executar
-
-### Opção 1: Script Automatizado (Recomendado)
-
-```bash
-# Na pasta raiz do projeto
-chmod +x start_project.sh
-./start_project.sh
-```
-
-O script oferece as seguintes opções:
-
-1. **Executar apenas o backend**
-2. **Executar apenas o frontend**
-3. **Executar backend e frontend** (recomendado)
-4. **Executar testes**
-5. **Sair**
-
-### Opção 2: Execução Manual
 
 #### Pré-requisitos
 
@@ -124,7 +104,7 @@ npm run build
 
 O frontend estará disponível em: http://localhost:5173
 
-### Opção 3: Docker
+### Opção 2: Docker
 
 ```bash
 # Backend com Docker
@@ -165,11 +145,6 @@ _Exemplo de mensagem legítima com baixa probabilidade de spam_
 ### Testes Automatizados
 
 ```bash
-# Na pasta raiz
-./start_project.sh
-# Escolher opção 4
-
-# Ou manualmente
 cd api
 python -m pytest test_model.py -v
 ```

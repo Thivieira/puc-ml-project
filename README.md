@@ -469,15 +469,6 @@ docker-compose -f docker-compose.dev.yml up --build
 
 ## 📚 Notebook Google Colab
 
-### Conformidade com a Ementa
-
-O projeto inclui um **notebook completo no Google Colab** que atende a todos os requisitos:
-
-- ✅ **Execução sem erros**: Notebook executável do início ao fim
-- ✅ **Documentação consistente**: Blocos de texto explicando cada etapa
-- ✅ **Processo completo**: Todas as etapas de ML documentadas
-- ✅ **Análise de resultados**: Resumo dos achados e conclusões
-
 ### Conteúdo do Notebook
 
 1. **📖 Contexto do Problema**
@@ -552,63 +543,6 @@ prediction = model.predict([translated_text])
 - [Flask-RESTX Documentation](https://flask-restx.readthedocs.io/)
 - [React 19 Documentation](https://react.dev/)
 - [TailwindCSS v4 Documentation](https://tailwindcss.com/)
-
-## 📋 Requisitos da Ementa - Checklist
-
-### ✅ Notebook de Machine Learning (4.0 pts)
-
-- [x] **Execução sem erros** (1.0 pt): Notebook executável no Google Colab
-- [x] **Processo de criação e documentação** (2.0 pts): Todas as etapas documentadas
-- [x] **Análise de resultados** (1.0 pt): Resumo dos achados e conclusões
-
-### ✅ Aplicação Full Stack (4.0 pts)
-
-- [x] **Integração do modelo** (2.0 pts): Carga do modelo no backend + frontend
-- [x] **Teste automatizado** (1.0 pt): PyTest com métricas de desempenho
-- [x] **Código limpo** (1.0 pt): Boas práticas de codificação Python
-
-### ✅ Vídeo de Apresentação (2.0 pts)
-
-- [x] **Qualidade e completude** (2.0 pts): Demonstração da aplicação funcionando
-
-### 📊 Composição da Nota
-
-- **Notebook ML**: 4.0 pontos (40%)
-- **Aplicação Full Stack**: 4.0 pontos (40%)
-- **Vídeo**: 2.0 pontos (20%)
-- **Total**: 10.0 pontos
-
-## 🎯 Objetivos Alcançados
-
-### Machine Learning
-
-- ✅ Dataset diferente dos vistos em aula (SMS Spam Collection)
-- ✅ 4 algoritmos clássicos implementados (KNN, Árvore, Naive Bayes, SVM)
-- ✅ Pipeline completo com todas as etapas
-- ✅ Otimização de hiperparâmetros com Grid Search
-- ✅ Cross-validation implementado
-- ✅ Notebook Colab executável e documentado
-
-### Desenvolvimento Full Stack
-
-- ✅ Backend Flask com modelo embarcado
-- ✅ Frontend React para entrada de dados
-- ✅ Integração completa backend-frontend
-- ✅ Exibição de resultados na interface
-
-### Testes e Qualidade
-
-- ✅ Testes automatizados com PyTest
-- ✅ Métricas de desempenho estabelecidas
-- ✅ Prevenção de regressão de modelo
-- ✅ Código limpo e bem documentado
-
-### Segurança
-
-- ✅ Reflexão sobre boas práticas de segurança
-- ✅ Anonimização de dados implementada
-- ✅ Validação e sanitização de entrada
-- ✅ Conformidade com LGPD
 
 ## 👨‍💻 Autor
 
